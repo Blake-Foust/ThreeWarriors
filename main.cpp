@@ -6,6 +6,7 @@
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
 #include <vector>
+#include "player.h"
 
 int main(){
 
@@ -27,6 +28,7 @@ int main(){
     spriteBackground.setTexture(textureBackground);
     spriteBackground.setPosition(0,0);
 
+    
     sf::View worldView(window.getDefaultView());
 
     while(window.isOpen()){
