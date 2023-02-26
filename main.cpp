@@ -27,7 +27,7 @@ int main(){
     spriteBackground.setTexture(textureBackground);
     spriteBackground.setPosition(0,0);
 
-//    sf::View worldView(window.getDefaultView());
+    sf::View worldView(window.getDefaultView());
 
     while(window.isOpen()){
         sf::Event event;
@@ -39,8 +39,5 @@ int main(){
         window.display();
 
     }
-
-
-
     return 0;
 }
