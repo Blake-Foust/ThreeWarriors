@@ -1,15 +1,14 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 #include <SFML/Graphics.hpp>
-
+#include "player.h"
 
 class Player{
 private:
     sf::Sprite playerSprite;
     sf::Vector2i playerSource; 
     enum _Direction{Down, Left, Right, Up};
-
-
+    
     float playerSpeed;
     sf::Clock pClok;
     sf::Time pTime;
