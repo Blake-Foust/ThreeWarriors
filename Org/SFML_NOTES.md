@@ -5,6 +5,7 @@
 - [Resources](#resources)
 - [Graphics](#graphics)
 - [Sound and Music](#sound-and-music)
+- [Credits](#credits)
 
 Real-time rendering
 Double buffering

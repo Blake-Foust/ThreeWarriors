@@ -39,10 +39,10 @@ class Game{
 
         void handlePlayerInput(sf::Keyboard::Key, bool);
         
-        bool mIsMovingUp,
-            mIsMovingDown,
-            mIsMovingLeft,
-            mIsMovingRight;
+        bool mIsMovingUp = false,
+            mIsMovingDown = false,
+            mIsMovingLeft = false,
+            mIsMovingRight = false;
             
     private:
        sf::Texture mTexture;
