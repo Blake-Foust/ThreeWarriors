@@ -1,17 +1,17 @@
 #include "gameClass.h"
-#include "textureholderClass.h"
 
 Game::Game():mWindow(sf::VideoMode(600,400),"SFML GAME"),mTexture(),mPlayer(){
-    TextureHolder texture;
+    std::cout << "before load" << std::endl; 
+    textures.load(Textures::Character,"assets/Pink_Monster.png"); 
+    textures.load(Textures::LandScape,"assets/game_background_1.png");
 
-    texture.load(Textures::Character,"Pink_Monster.png");
     
-    
-    if(!mTexture.loadFromFile("Pink_Monster.png")){
-        std::cout << "Couldn't load PinkMonst.png\n";        
-    }
-    this->mPlayer.setTexture(mTexture);
+    this->mPlayer.setTexture(textures.get(Textures::Character));
     this->mPlayer.setPosition(100.f,100.f);
+
+    this->mBackground.setTexture(textures.get(Textures::LandScape));
+    this->mBackground.setPosition(0.f,0.f);
+
 }
 
 void Game::run(){
