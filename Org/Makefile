@@ -1,4 +1,4 @@
-CFLAGS=-c -Wall -std=c++17 
+CFLAGS=-std=c++17 
 CC=g++
 
 SFMLLIB= -lsfml-graphics -lsfml-window -lsfml-system -lsfml-network -lsfml-audio
@@ -19,4 +19,4 @@ gameClass.o: gameClass.cpp
 	$(CC) $(STD) $(CFLAGS) -c gameClass.cpp
 
 clean:
-	rm -f core *.o
+	rm -f core *.o GameTest
